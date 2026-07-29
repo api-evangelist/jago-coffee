@@ -1,7 +1,24 @@
 aid: jago-coffee
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jago-coffee.png
 name: Jago Coffee
-description: Jago Coffee is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Jago Coffee is an Indonesian mobile coffee company operating a fleet of electric-vehicle
+  coffee carts ("Jagoans") that bring freshly brewed specialty coffee, tea, and seasonal drinks directly
+  to neighborhoods across Indonesia. Billing itself as the "#1 Cafe on Wheels," Jago lets customers order
+  through its mobile app with no delivery fees or order minimums, paying with GoPay or OVO digital wallets,
+  using Arabica beans sourced directly from local Indonesian farmers. Backed by 500 Global, the company is
+  tracked in the API Evangelist network as a consumer coffee-delivery business; as of this enrichment pass
+  it publishes no public API, developer portal, or SDK.
 url: https://raw.githubusercontent.com/api-evangelist/jago-coffee/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Coffee
+- Food and Beverage
+- Delivery
+- Mobile App
+- Indonesia
+- Consumer
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/jago-coffee-domain-security.yml
 - type: Website
   url: https://jagocoffee.com
+- type: Blog
+  url: https://jagocoffee.com/blog
+- type: TermsOfService
+  url: https://jagocoffee.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://jagocoffee.com/privacy-policy
+- type: Support
+  url: mailto:support@jagocoffee.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
